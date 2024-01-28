@@ -134,8 +134,11 @@ Below is a summary of how each F1 score affected the actual False Positives (Rea
 ### Outline of project
 
 - [Link to notebook 1]()
-- [Link to notebook 2]()
-- [Link to notebook 3]()
+- [Link to Raw Fake News Dataset](https://github.com/mpacielim/FakeNewsCapstoneFinal/tree/main/data)
+- [Link to Raw Fake News Dataset Original Location in Kaggle](https://www.kaggle.com/datasets/saurabhshahane/fake-news-classification/data)
+- Note that the dataset linked above was above the maximum 100 MB file size upload allowed by github, hence the [github large file storage (LFS) system](https://git-lfs.com/) was used.
+	- The .gitattributes file in this repository was required to upload the dataset through the github LFS platform.
+
 
 
 ##### Contact and Further Information
