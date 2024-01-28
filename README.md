@@ -9,7 +9,7 @@ The goal of this project is to create a model that accurately classifies news as
 
 **Findings**
 
-The best model for correctly classifying news was a recurrent neural network (RNN) model, with an accuracy of 0.888, F1 score of 0.874, recall of 0.843, precision of 0.907 and PR-AUC of 0.953 on unseen test data.  This was trained on a dataset of 750 text samples that were classified as 0 (Real) or 1 (Fake).  The scores mean that model on the 250 new test samples, the model correctly classified 88.8% of samples, with 10 False Positives (Real news incorrectly identified as Fake) and 18 False Negatives (Fake news incorrectly identified as Real). Note that due to the inherent nature of neural networks, the results in the jupyter notebook change slightly each time it is run, however the RNN model still far outperforms the other models each time.
+The best model for correctly classifying news was a recurrent neural network (RNN) model, with an accuracy of 0.856, F1 score of 0.855, recall of 0.922, precision of 0.797 and PR-AUC of 0.959 on unseen test data.  This was trained on a dataset of 750 text samples that were classified as 0 (Real) or 1 (Fake).  The scores mean that model on the 250 new test samples, the model correctly classified 85.6% of samples, with 27 False Positives (Real news incorrectly identified as Fake) and 9 False Negatives (Fake news incorrectly identified as Real). Note that due to the inherent nature of neural networks, the results in the jupyter notebook change slightly each time it is run, however the RNN model still far outperforms the other models each time.
 
 ### Research Question
 The goal of this project is to determine the best model for predicting whether or not news articles are from a fake or verified sources based on the linguistic contents of the article.
@@ -89,19 +89,19 @@ The analysis was conducted as follows:
 #### Results
 This model performed the best compared to the non neural models for correctly classifying news as Fake or Real.  Note that due to the inherent nature of neural networks, the results in the jupyter notebook change slightly each time it is run, however the RNN model still far outperforms the other models each time.
 
-During this run, the best model was the RNN with an F1 score of 0.874.
-Its optimal hyperparameters were 5 epochs and 32 neurons. 
-On the test data, it achieved 0.888 accuracy, 0.843 recall, 0.907 precision and 0.953 PR-AUC.
+During this run, the best model was the RNN with an F1 score of 0.855.
+Its optimal hyperparameters were 10 epochs and 32 neurons. 
+On the test data, it achieved 0.856 accuracy, 0.922 recall, 0.797 precision and 0.959 PR-AUC.
 
 Of the non-neural models, Logistic Regression performed the best with an F1 score of 0.775.
 
 Below is a summary of how each F1 score affected the actual False Positives (Real news incorrectly identified as fake) and False Negatives (Fake news incorrectly identified as Real) by each model out of the test dataset of 250 samples:
 
 - RNN model
-    - F1 Score: 0.874
-    - False Positives: 10
-    - False Negatives: 18
-    - Total incorrect classifications: 28 (11.2%)
+    - F1 Score: 0.855
+    - False Positives: 27
+    - False Negatives: 9
+    - Total incorrect classifications: 36 (14.4%)
 
 - Logistic Regression model
     - F1 Score: 0.775
@@ -133,12 +133,11 @@ Below is a summary of how each F1 score affected the actual False Positives (Rea
 
 ### Outline of project
 
-- [Link to notebook 1]()
+- [Link to Initial Technical Report](https://github.com/mpacielim/FakeNewsCapstoneInitialReport/blob/main/Fake%20News%20Capstone%20Initial%20Technical%20Analysis.ipynb)
 - [Link to Raw Fake News Dataset](https://github.com/mpacielim/FakeNewsCapstoneInitialReport/tree/main/data)
 - [Link to Raw Fake News Dataset Original Location in Kaggle](https://www.kaggle.com/datasets/saurabhshahane/fake-news-classification/data)
 - Note that the dataset linked above was above the maximum 100 MB file size upload allowed by github, hence the [github large file storage (LFS) system](https://git-lfs.com/) was used.
 	- The .gitattributes file in this repository was required to upload the dataset through the github LFS platform.
-
 
 
 ##### Contact and Further Information
